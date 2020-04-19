@@ -2,8 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-WebAppIdentity-20C3B987-10DB-4886-8867-39E1495CB7EA</UserSecretsId>
   </PropertyGroup>
 
 
+  <ItemGroup>
+    <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2" />
+  </ItemGroup>
 
 </Project>
